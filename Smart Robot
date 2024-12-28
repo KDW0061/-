@@ -395,43 +395,6 @@ void scan_bo(){   //오브젝트, 기둥 스캔
   }
 }
 
-/*
-void scan_bo(){   //오브젝트, 기둥 스캔 
-  chY(1);    // 0
-  stop();
-  delay(100);
-  scan();
-  chY(2);    // 1
-  stop();
-  delay(100);
-  scan();
-  chY(3);    // 2
-  stop();
-  delay(100);
-  scan();
-  chY(4);    // 3
-  stop();
-  delay(100);
-  scan();
-  chX(1);
-  stop();
-  stop();
-  delay(50);
-  scan();         // 3 
-  chY(3);    // 2 
-  stop();
-  delay(100);   
-  scan();
-  chY(2);    // 1
-  stop();
-  delay(100);
-  scan();
-  chY(1);    // 0
-  stop();
-  delay(100);
-  scan();
-}
-*/
 void scan(){            //스캔 및 값 저장 
   Wire.begin();         //I2C 통신 시작
   while (!huskylens.begin(Wire))
